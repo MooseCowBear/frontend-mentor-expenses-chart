@@ -18,7 +18,7 @@
   </style>
 </head>
 <body>
-<main>
+  <main>
     <section class="balance-summary">
       <div class="balance">
         <h2>My balance</h2>
@@ -26,50 +26,52 @@
       </div>
       <img src="./images/logo.svg" alt="logo of two overlapping circles">
     </section>
-    <section class="spending-breakdown">
-      <h1>Spending - Last 7 days</h1>
-      <figure class="bar-graph"> 
-        <div class="bar-wrapper">
-          <div id="mon" class="bar"></div>
-          <p>mon</p>
-        </div>
-        <div class="bar-wrapper">
-          <div id="tue" class="bar"></div>
-          <p>tue</p>
-        </div>
-        <div class="bar-wrapper">
-          <div id="wed" class="bar"></div>
-          <p>wed</p>
-        </div>
-        <div class="bar-wrapper">
-          <div id="thu" class="bar"></div>
-          <p>thu</p>
-        </div>
-        <div class="bar-wrapper">
-          <div id="fri" class="bar"></div>
-          <p>fri</p>
-        </div>
-        <div class="bar-wrapper">
-          <div id="sat" class="bar"></div>
-          <p>sat</p>
-        </div>
-        <div class="bar-wrapper">
-          <div id="sun" class="bar"></div>
-          <p>sun</p>
-        </div>
-      </figure>
-    </section>
-    <section class="month-summary">
-      <h2>Total this month</h2>
-      <div class="month-summary-wrapper">
-        <p>$478.33</p>
+    <div class="graph-wrapper">
+      <section class="spending-breakdown">
+        <h1>Spending - Last 7 days</h1>
+        <figure class="bar-graph"> 
+          <div class="bar-wrapper">
+            <div id="mon" class="bar"></div>
+            <p>mon</p>
+          </div>
+          <div class="bar-wrapper">
+            <div id="tue" class="bar"></div>
+            <p>tue</p>
+          </div>
+          <div class="bar-wrapper">
+            <div id="wed" class="bar"></div>
+            <p>wed</p>
+          </div>
+          <div class="bar-wrapper">
+            <div id="thu" class="bar"></div>
+            <p>thu</p>
+          </div>
+          <div class="bar-wrapper">
+            <div id="fri" class="bar"></div>
+            <p>fri</p>
+          </div>
+          <div class="bar-wrapper">
+            <div id="sat" class="bar"></div>
+            <p>sat</p>
+          </div>
+          <div class="bar-wrapper">
+            <div id="sun" class="bar"></div>
+            <p>sun</p>
+          </div>
+        </figure>
+      </section>
+      <section class="month-summary">
+        <h2>Total this month</h2>
+        <div class="month-summary-wrapper">
+          <p>$478.33</p>
 
-        <div class="month-change">
-          <p>+2.4%</p>
-          <p>from last month</p>
+          <div class="month-change">
+            <p class="percent-change">+2.4%</p>
+            <p>from last month</p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
