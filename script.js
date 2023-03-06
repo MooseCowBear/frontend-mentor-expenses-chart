@@ -26,7 +26,8 @@ function displayData(data) {
 
 function displayError(error) {
     console.log(error);
-
+    const errorDiv = document.getElementById("error-message");
+    errorDiv.innerText = "Something went wrong.";
 }
 
 //event listener for mouseover on bars to display the amount divs
