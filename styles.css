@@ -128,7 +128,7 @@ h2 {
 .spending-breakdown {
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 1em;
 }
 
 .spending-breakdown p {
