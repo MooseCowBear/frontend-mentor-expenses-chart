@@ -3,7 +3,7 @@ fetch('https://raw.githubusercontent.com/MooseCowBear/frontend-mentor-expenses-c
   .then(data => displayData(data)) //function that uses the data
   .catch(error => displayError(error)); //function for loading an error message in case it doesn't read
 
-const days = {"sun": 0, "mon": 1, "tue": 2, "wed":3, "thu": 4, "fri": 5, "sat": 6};
+const days = {sun: 0, mon: 1, tue: 2, wed:3, thu: 4, fri: 5, sat: 6};
 function displayData(data) {
     const today = new Date().getDay(); //returns 0 - 6, with 0 being sun - graph starts week on monday
     for (let i = 0; i < data.length; i++) {
@@ -14,9 +14,12 @@ function displayData(data) {
         const bar = document.getElementById(day);
         bar.style.height = `${amount/9}em`; 
 
+        if (days[day] === today) {
+            bar.classList.add("today");
+        }
+
         //and the right amount div
         const amountDisplay = document.getElementById(`${day}-spent`);
-        console.log(amountDisplay, "display amount div");
         amountDisplay.innerText = "$" + amount; 
     }
 }
