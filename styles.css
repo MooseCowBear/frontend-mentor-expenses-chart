@@ -4,9 +4,8 @@
 
     --background: hsl(27, 66%, 92%);
     --text-primary: hsl(25, 47%, 15%);
-    --text-secondary:  hsl(28, 10%, 53%);
-
-    --orange: hsl(33, 100%, 98%);
+    --text-secondary: hsl(33, 100%, 98%);
+    --text-tertiary:  hsl(28, 10%, 53%);
 }
 
 /* reset */
@@ -22,7 +21,8 @@ h2,
 h3,
 p, 
 section,
-article {
+article,
+figure {
   margin: 0;
   padding: 0;
 }
@@ -69,4 +69,103 @@ a:not([class]) {
 body {
     font-size: 18px;
     font-family: "DM sans", sans-serif;
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    background-color: var(--background);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.graph-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--text-secondary);
+    border-radius: 12px;
+    padding: 1.4em;
+    gap: 1em;
+}
+
+.balance-summary {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--hightlight-primary);
+    color: var(--text-secondary);
+    border-radius: 12px;
+    padding: 1em;
+} 
+
+.balance-summary img {
+    transform: scale(0.7);
+}
+
+.balance-summary p {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 1.1em;
+}
+
+h2 {
+    font-size: 0.6em;
+    font-weight: 400;
+}
+
+.spending-breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.spending-breakdown p {
+    font-size: 0.7em;
+    color: var(--text-tertiary);
+}
+
+.bar-graph {
+    display: flex;
+    gap: 1em;
+    border-bottom: 1px solid var(--text-tertiary);
+}
+
+.month-summary {
+    display: flex;
+    flex-direction: column;
+}
+
+.month-summary h2 {
+    color: var(--text-tertiary);
+    margin-bottom: -0.5em;
+}
+
+.month-summary-wrapper > p {
+    font-weight: 700;
+    font-size: 1.4em;
+}
+
+.month-summary-wrapper > p, .percent-change {
+    font-weight: 700;
+}
+
+.percent-change {
+    font-size: 0.7em;
+}
+
+.month-change p:not(.percent-change) {
+    font-size: 0.6em;
+    color: var(--text-tertiary);
+}
+
+.month-summary-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
