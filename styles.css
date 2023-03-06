@@ -110,6 +110,12 @@ main {
     font-weight: 700;
 }
 
+.balance {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
 h1 {
     font-size: 1.1em;
 }
@@ -122,7 +128,7 @@ h2 {
 .spending-breakdown {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 2em;
 }
 
 .spending-breakdown p {
@@ -132,10 +138,13 @@ h2 {
 
 .bar-graph {
     display: flex;
-    gap: 1em;
+    gap: 0.8em;
     border-bottom: 1px solid var(--text-tertiary);
+    padding-bottom: 1em;
 }
-
+.bar-graph p {
+    font-size: 0.6em;
+}
 .month-summary {
     display: flex;
     flex-direction: column;
@@ -143,7 +152,7 @@ h2 {
 
 .month-summary h2 {
     color: var(--text-tertiary);
-    margin-bottom: -0.5em;
+    margin-bottom: -0.3em;
 }
 
 .month-summary-wrapper > p {
@@ -156,7 +165,13 @@ h2 {
 }
 
 .percent-change {
-    font-size: 0.7em;
+    font-size: 0.6em;
+}
+
+.month-change {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .month-change p:not(.percent-change) {
@@ -168,4 +183,17 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.bar-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bar {
+    background-color: var(--hightlight-primary);
+    width: 1.8em;
+    height: 5.2em; /* will be value ems */ 
+    border-radius: 5px;
 }
