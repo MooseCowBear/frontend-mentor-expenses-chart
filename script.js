@@ -35,10 +35,20 @@ const bars = document.querySelectorAll(".bar");
 bars.forEach(elem => elem.addEventListener('mouseenter', event => {
     const amountSpentDiv = event.target.previousElementSibling; 
     amountSpentDiv.classList.add("focused");
-    console.log(amountSpentDiv.classList, amountSpentDiv.innerText);
 }));
 bars.forEach(elem => elem.addEventListener('mouseleave', event => {
     const amountSpentDiv = event.target.previousElementSibling; 
     amountSpentDiv.classList.remove("focused");
-    console.log(amountSpentDiv.classList, amountSpentDiv.innerText);
+}));
+
+//focusing with tabbing
+
+bars.forEach(elem => elem.addEventListener('focus', event => {
+    const amountSpentDiv = event.target.previousElementSibling; 
+    amountSpentDiv.classList.add("focused");
+    
+}));
+bars.forEach(elem => elem.addEventListener('blur', event => {
+    const amountSpentDiv = event.target.previousElementSibling; 
+    amountSpentDiv.classList.remove("focused");
 }));
