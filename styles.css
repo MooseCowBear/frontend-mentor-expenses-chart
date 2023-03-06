@@ -138,9 +138,9 @@ h2 {
 
 .bar-graph {
     display: flex;
-    gap: 0.1em;
     border-bottom: 1px solid var(--text-tertiary);
     padding-bottom: 1em;
+    height: 9rem; /* so won't wiggle when amount detail is displayed */
 }
 .bar-graph p {
     font-size: 0.6em;
@@ -191,13 +191,12 @@ h2 {
     align-items: center;
     justify-content: flex-end;
     margin: 0 0.3em;
-    max-width: 2.4em;
+    width: 2.2em; /* so won't wiggle when amount detail is displayed */
 }
 
 .bar {
     background-color: var(--hightlight-primary);
     width: 2em;
-    height: 5.2em; /* will be value ems */ 
     border-radius: 5px;
 }
 
@@ -215,6 +214,23 @@ h2 {
     display: none;
 }
 
+.amount-spent:hover {
+    cursor: pointer;
+}
+
 .amount-spent.focused {
     display: block;
+}
+
+@media (max-width: 420px) {
+    .bar {
+        width: 1.7em;
+    }
+    .bar-wrapper {
+        width: 2em;
+        margin: 0 0.1em;
+    }
+    .graph-wrapper {
+       padding: 1em;
+    }
 }
