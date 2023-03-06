@@ -152,7 +152,6 @@ h2 {
 
 .month-summary h2 {
     color: var(--text-tertiary);
-    margin-bottom: -0.3em;
 }
 
 .month-summary-wrapper > p {
