@@ -199,6 +199,10 @@ h2 {
     border-radius: 5px;
 }
 
+.bar:hover {
+    cursor: pointer;
+}
+
 .bar.today {
     background-color: var(--hightlight-secondary);
 }
@@ -211,10 +215,6 @@ h2 {
     margin-bottom: 0.2em;
     border-radius: 5px;
     display: none;
-}
-
-.amount-spent:hover {
-    cursor: pointer;
 }
 
 .amount-spent.focused {
