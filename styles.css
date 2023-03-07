@@ -201,6 +201,7 @@ h2 {
 
 .bar:hover {
     cursor: pointer;
+    opacity: 0.7;
 }
 
 .bar.today {
