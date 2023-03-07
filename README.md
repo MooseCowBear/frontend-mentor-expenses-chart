@@ -14,7 +14,7 @@ Users should be able to:
 
 ## Screenshot
 
-![alt text](screenshots/expensesChart.png "expenses chart")
+![alt text](screenshots/desktop.png "expenses chart")
 
 ## Links
 
